@@ -32,15 +32,25 @@ export default class Header extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar >
 
 	            <Nav className='ml-md-3' navbar>
+							{/* add navItem below */}
 	              <NavItem>
 	                <NavLink href="/">Home</NavLink>
 	              </NavItem>
 	              <NavItem>
 	                <NavLink href="/ranking">Ranking</NavLink>
 	              </NavItem>
-	              <NavItem>
+	              
+								<NavItem>
+									<NavLink href="/profile">Profile</NavLink>
+								</NavItem>
+								<NavItem>
 	                <NavLink href="/posts">Posts</NavLink>
 	              </NavItem>
+								<NavItem>
+									<NavLink href="/about">About</NavLink>
+								</NavItem>
+
+
 	              <UncontrolledDropdown nav inNavbar>
 	                <DropdownToggle nav caret>
 	                  Options

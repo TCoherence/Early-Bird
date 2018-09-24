@@ -1,0 +1,15 @@
+<!--css-->
+html *{margin:100px;padding:50px;}
+.layout > div{min-height:100px;}
+.left{background:rgb(224, 229, 231); width:500px; float:left;}
+.right{background:rgb(235, 238, 235); width:100px; float:right}
+.main{background:rgb(245, 245, 245)}
+
+.flex-container{
+  display: -webkit-flex;
+  display: flex;
+}
+.flex-container .main{
+  -webkit-flex: 1;
+  flex: 1;
+}

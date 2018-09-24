@@ -8,7 +8,8 @@ import Header from './component/Header.jsx';
 import Footer from './component/Footer.jsx';
 import Login from './component/Login.jsx';
 import Signin from './component/SignIn.jsx';
-
+import Profile from './component/Profile.jsx';
+// import About from './component/About.jsx';
 
 class App extends Component {
   render() {
@@ -16,10 +17,13 @@ class App extends Component {
         <Router>
           <div >
             <Header />
-            <Route  exact path="/" component={Home}/>
+            <Route  exact path="/" component={Home}/>            
             <Route  path="/ranking" component={Ranking}/>
+            <Route  path="/profile" component={Profile}/>
+            {/* <Route  path="/about" component={About} /> */}
             <Route  path="/posts" render={props => <Posts userId={1} {...props} />}/>
             {/*<Route  path="/" render={props => <PostDetail userId={1} {...props} />}/>*/}
+            
             <Route  path="/login" component={Login}/>
             <Route  path="/signin" component={Signin}/>
             <Footer />
