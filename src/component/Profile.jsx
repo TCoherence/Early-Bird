@@ -5,6 +5,7 @@ import {
 import AvatarImage from "../images/avatar.jpeg"
 import './Profile.css'
 
+// avatar param
 const Avatar = (props) => {
   return (
       <div>
@@ -30,15 +31,54 @@ const Avatar = (props) => {
 
 
 const ProfileDetail = (props) => {
+    // 
     return (
+        // Navigation Bar
         <div>
-            <NavBar />
+            <div>
+                <NavBar />
+            </div>
+            // Submission
+            <div>
+                <Submission />
+            </div>
+            // Ranking Graph presentation
+            <div>
+                
+            </div>
+            // posts abstract
+            <div>
+
+            </div>
         </div>
     )
 }
+class Submission extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            submissionNumber: 0
+        }
+        this.updateNumber = this.updateNumber.bind(this);
+    }
+    updateNumber() {
+        this.setState({
+            
+        })
+    }
+    
+    render() {
 
+        return (
+            <h2>
+                {this.submissionNumber} submissions in the last year.
+            </h2>
+            
+        );
+    }
+}
 
-class NavBar extends React.Component {
+class NavBar extends Component {
     constructor(props) {
       super(props);
   
@@ -92,13 +132,14 @@ class NavBar extends React.Component {
     }
   }
 
-
+// Detail profile layout
 class Profile extends Component {
 
     render(){
         return (
         <div className = "flex-container">
-            <div className = "left" >
+            <div className = "left" />
+            <div className = "left1" >
                 <Avatar />
             </div>
             <div className = "main">

@@ -1,0 +1,8 @@
+.flex-container{
+    display: -webkit-flex;
+    display: flex;
+  }
+.flex-container .main{
+    -webkit-flex: 1;
+    flex: 1;
+}
