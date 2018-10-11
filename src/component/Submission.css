@@ -1,0 +1,25 @@
+*{
+    /* element abnoral test use */
+    /* background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important; */
+    /* //////////////////////// */
+    box-sizing: border-box;
+}
+.submission {
+    padding: 10px;
+    min-width: 1012px;
+    border: 1px black;
+    border-color: bisque;
+}
+
+.container {
+    /* overflow: hidden; */
+}
+
+.calander {
+    width: 100%;
+    border: 1px black;
+    border-style: dashed;
+    border-color: black;
+}

@@ -1,24 +1,44 @@
 <!--css-->
-html 
+html {
+  -webkit-text-size-adjust: 100%;
+}
 *{
-  margin:100px;
-  padding:50px;
   box-sizing: border-box;
 }
-.p{padding : 5px}
+/* .p{padding : 5px}
 .layout > div{min-height:100px;}
 .left{background:rgb(224, 229, 231); width:200px; float:left;}
 .left1{background:rgb(224, 229, 231); width:300px; float:left;}
-.right{background:rgb(235, 238, 235); width:200px; float:right}
-.main{background:#f5f5f5}
+.right{background:#ebeeeb; width:200px; float:right}
+.main{background:#f5f5f5} */
 
 
+.px16 {
+  padding-right: 16px !important;
+  padding-left: 16px !important;
+}
 
-.flex-container{
-  display: -webkit-flex;
+.mt24 {
+  margin-top: 24px !important;
+}
+
+.wholecontainer{
+  max-width: 1450px;
+  margin-left: auto;
+  margin-right: auto;
+  /* display: -webkit-flex; */
   display: flex;
 }
-.flex-container .main{
-  -webkit-flex: 1;
-  flex: 1;
+.wholecontainer .main{
+  width:75%;
+  /* float:right; */
+}
+.wholecontainer .left{
+  width:25%;
+  min-width: 250px;
+  /* float: left; */
+}
+
+.float-left {
+  float: left !important;
 }
